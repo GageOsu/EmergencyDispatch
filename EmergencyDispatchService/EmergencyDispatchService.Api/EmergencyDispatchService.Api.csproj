@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EmergencyDispatchService.Application\EmergencyDispatchService.Application.csproj" />
+  </ItemGroup>
+
 </Project>

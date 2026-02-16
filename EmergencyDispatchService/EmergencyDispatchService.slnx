@@ -1,1 +1,7 @@
-<Solution />
+<Solution>
+  <Project Path="EmergencyDispatchService.Api/EmergencyDispatchService.Api.csproj" Id="2ccb9e33-c108-405f-845f-18607a523345" />
+  <Project Path="EmergencyDispatchService.Application/EmergencyDispatchService.Application.csproj" Id="23114a55-ddba-4b99-9ce4-a13f577aef03" />
+  <Project Path="EmergencyDispatchService.Contracts/EmergencyDispatchService.Contracts.csproj" Id="25cf9abb-a19d-41cf-972b-814ec5da89cd" />
+  <Project Path="EmergencyDispatchService.Domain/EmergencyDispatchService.Domain.csproj" Id="ede96b32-d4ae-4db7-ad1f-f9d24118ea31" />
+  <Project Path="EmergencyDispatchService.Infrastructure/EmergencyDispatchService.Infrastructure.csproj" Id="ef7a2488-8066-429a-a3ff-39272c4aba88" />
+</Solution>

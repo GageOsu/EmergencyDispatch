@@ -12,7 +12,7 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfigurationManager configuration)
     {
-        var stringConnection = configuration.GetConnectionString("ConnectionStrings");
+        var stringConnection = configuration.GetConnectionString("connection");
         services.AddDbContext<EmergencyDispatchServiceDbContext>(options =>
         options.UseNpgsql(stringConnection));
 

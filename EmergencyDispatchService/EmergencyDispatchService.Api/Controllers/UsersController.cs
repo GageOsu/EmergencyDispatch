@@ -33,4 +33,20 @@ public class UsersController : ControllerBase
         await _userRepository.AddUserAsync(user);
         return Ok(user.Id);
     }
+
+    [HttpGet]
+    public async Task<IActionResult> GetById(Guid id)
+    {
+        if (id == Guid.Empty)
+        {
+            return BadRequest();
+        }
+        var user = await _userRepository.GetByIdUserAsync(id);
+        if (user == null)
+        {
+            return NotFound();
+        }
+        return Ok(user);
+    }
+
 }

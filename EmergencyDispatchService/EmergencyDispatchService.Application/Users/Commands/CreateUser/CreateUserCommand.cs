@@ -21,7 +21,12 @@ public class CreateUserCommand
         {
             return Guid.Empty;
         }
-        await _userRepository.AddUserAsync(user);
+        var newuser = new User(
+            firstName: user.FirstName,
+            lastName: user.LastName,
+            phoneNumber: user.PhoneNumber
+            );
+        await _userRepository.AddUserAsync(newuser);
         await _unitOfWork.CommitChangesAsync();
 
         return user.Id;

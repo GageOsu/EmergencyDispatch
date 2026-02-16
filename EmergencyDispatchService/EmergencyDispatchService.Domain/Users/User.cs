@@ -21,4 +21,6 @@ public class User : Entity
         LastName = lastName;
         PhoneNumber = phoneNumber;
     }
+
+    //TODO: Добавить хэш пароль
 }

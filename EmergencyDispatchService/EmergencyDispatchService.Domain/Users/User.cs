@@ -4,18 +4,19 @@ namespace EmergencyDispatchService.Domain.Users;
 
 public class User : Entity
 {
-    public string FirstName { get; } = null!;
+    public Guid Id { get; private set;  }
+    public string FirstName { get; private set; } = null!;
 
-    public string LastName { get; } = null!;
+    public string LastName { get; private set; } = null!;
 
-    public string PhoneNumber { get; } = null!;
+    public string PhoneNumber { get; private set; } = null!;
 
     public User(
         string firstName,
         string lastName,
         string phoneNumber,
         Guid? id = null)
-        : base(id ?? Guid.NewGuid())
+        :base(id ?? Guid.NewGuid())
     {
         FirstName = firstName;
         LastName = lastName;
@@ -23,4 +24,10 @@ public class User : Entity
     }
 
     //TODO: Добавить хэш пароль
+
+
+    private User()
+    {
+
+    }
 }

@@ -1,6 +1,6 @@
 ﻿namespace EmergencyDispatchService.Domain.Status;
 
-enum StatusEnum
+public enum StatusEnum
 {
     Created = 0,
     Accepted = 1,

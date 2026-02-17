@@ -1,4 +1,6 @@
 ﻿using EmergencyDispatchService.Domain.Common;
+using EmergencyDispatchService.Domain.Compaints;
+using EmergencyDispatchService.Domain.Positions;
 
 namespace EmergencyDispatchService.Domain.Users;
 
@@ -9,6 +11,12 @@ public class User : Entity
     public string LastName { get; private set; } = null!;
 
     public string PhoneNumber { get; private set; } = null!;
+
+    public Guid PositionId {  get; private set; }
+
+    public Position Position { get; private set; }
+
+    public List<Complaint> Complaints { get; private set; } = [];
 
     public User(
         string firstName,

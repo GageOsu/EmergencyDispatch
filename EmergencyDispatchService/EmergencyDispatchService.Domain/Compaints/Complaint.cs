@@ -4,19 +4,18 @@ namespace EmergencyDispatchService.Domain.Compaints;
 
 public class Complaint : Entity
 {
-    public Guid UserCreateId { get; } 
-
-    public Guid UserAcceptId { get; }
+    public int ComplaintId { get; private set; }
+    public Guid UserCreateId { get; private set; } 
 
     //TODO: Сделать enum статуса жалобы
 
-    public DateTime CreateDate { get; }
+    public DateTime CreateDate { get; private set; }
 
-    public DateTime CompletionDate { get; }
-
+    public DateTime AcceptedDate { get; private set; }
+    public DateTime CompletionDate { get; private set; }
 
     //TODO: Добавить возможность добавления Фотографии
-    public string Description { get; } = null!;
+    public string Description { get; private set; } = null!;
 
 
 

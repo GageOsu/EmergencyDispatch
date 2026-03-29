@@ -1,4 +1,4 @@
-![Uploading изображение.png…]()
+<img width="1005" height="636" alt="изображение" src="https://github.com/user-attachments/assets/f06d0395-a253-46b6-af89-9812a2b5fde8" />
 <img width="989" height="542" alt="изображение" src="https://github.com/user-attachments/assets/23d020cb-baf6-430b-a249-c5c45b5f716e" />
 
 # Backend ASP.NET CQRS PostgreSQL Clean Architecture
